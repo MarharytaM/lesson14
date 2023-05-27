@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background-color:red;
+	
+}
+header{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding-top:100px;
+}
+#mario_animation{
+	background-image:url("images/m.jpg");
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	border:4px solid #800000;
+	box-shadow:0 0 0 5px white;
+	transition: border-radius 4s ,
+				background-image 4s ease,
+				transform 4s 2s,
+				box-shadow 3s;
+}
+#mario_animation:hover{
+	background-image:url("images/mario1.jpg");
+	transform: rotate(45deg);
+	border-radius:0%;
+	box-shadow:0 0 0 5px blue;
+}
+#text_animation{
+	color:#F0F8FF;
+	font-family:"Cherry Bomb One ";
+	font-size:60px;
+}
+header span{
+	display:inline-block;
+}
+header:hover .sm{
+	transform: rotate(45deg);
+}
